@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
+
+
+
+</head>
+<body>
+  <div class="w-50 m-auto shadow-lg p-4 m-5">
+    <h2>CRUD System</h2>
+    <label for="productName" class="my-2 fw-bold"> productName:</label>
+    <input type="text" class="form-control" id="productName">
+    <label for="productCategary" class="my-2 fw-bold">productCategary:</label>
+    <input type="text" class="form-control" id="productCategary">
+    <label for="productPrice" class="my-2 fw-bold">productPrice:</label>
+    <input type="text" class="form-control" id="productPrice">
+    <label for="productDescribtion" class="my-2 fw-bold">productdesc:</label>
+    <textarea class="form-control" id="productDescribtion"></textarea>
+    <button onclick="addproduct()" class="btn btn-outline-info m-4 px-4">Add</button>
+    <input onkeyup="searchproduct()" class="form-control" type="text" id="search">    
+    <button onclick="clearall()" class="btn btn-outline-danger m-4 px-4">clearALL</button>
+
+
+  </div>
+  
+
+   <div class="w-50 m-auto my-5 shadow-lg">
+    <table class="table table-striped">
+      <thead>
+        <th>
+          index
+        </th>
+        <th>
+          name
+        </th>
+        <th>
+          category
+        </th>
+        <th>
+          price
+        </th>
+        <th>
+          description
+        </th>
+        <th>
+          delete
+        </th>
+        <th>
+          update
+        </th>
+      </thead>
+      <tbody id="tbodyy">
+       
+
+      </tbody>
+      
+    </table>  
+   </div>
+   <script src="js/main.js"></script>
+
+</body>
+</html>
